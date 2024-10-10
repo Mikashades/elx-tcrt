@@ -1,0 +1,22 @@
+<h1>Order Details</h1>
+
+<p>
+  <strong>User:</strong>
+  <%= @order.user_id %>
+</p>
+
+<p>
+  <strong>Total Price:</strong>
+  <%= @order.total_price %>
+</p>
+
+<h2>Order Items</h2>
+<ul>
+  <%= for item <- @order.order_items do %>
+    <li>
+      Product ID: <%= item.product_id %> - Quantity: <%= item.quantity %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link "Back", to: Routes.page_path(@conn, :index) %>

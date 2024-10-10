@@ -1,0 +1,33 @@
+<h1>New Product</h1>
+
+<%= form_for @changeset, Routes.product_path(@conn, :create), fn f -> %>
+  <div>
+    <%= label f, :name %>
+    <%= text_input f, :name %>
+    <%= error_tag f, :name %>
+  </div>
+
+  <div>
+    <%= label f, :description %>
+    <%= textarea f, :description %>
+    <%= error_tag f, :description %>
+  </div>
+
+  <div>
+    <%= label f, :price %>
+    <%= number_input f, :price %>
+    <%= error_tag f, :price %>
+  </div>
+
+  <div>
+    <%= label f, :stock %>
+    <%= number_input f, :stock %>
+    <%= error_tag f, :stock %>
+  </div>
+
+  <div>
+    <%= submit "Create Product" %>
+  </div>
+<% end %>
+
+<%= link "Back", to: Routes.product_path(@conn, :index) %>
