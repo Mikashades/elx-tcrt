@@ -1,6 +1,32 @@
-# elx-tcrt
+# Elx_Tcrt - Comprehensive E-commerce Application
 
-Dosya Şeması
+Elixir ve Phoenix kullanarak geliştirilmiş kapsamlı bir e-ticaret uygulamasıdır. Kullanıcıların ürünleri görüntülemesine, sepete eklemesine ve sipariş vermesine olanak tanır.
+
+## Özellikler
+
+- **Kullanıcı Yönetimi**: Kullanıcı kayıt ve giriş işlemleri.
+- **Ürün Yönetimi**: Ürün ekleme, düzenleme, silme ve listeleme.
+- **Sepet Yönetimi**: Sepete ürün ekleme, çıkarma ve görüntüleme.
+- **Sipariş Yönetimi**: Sipariş oluşturma ve sipariş detaylarını görüntüleme.
+
+## Kurulum
+
+### Gereksinimler
+
+- Elixir 1.12+
+- Erlang/OTP 24+
+- PostgreSQL
+
+### Adımlar
+
+1. **Projeyi Klonlama**
+
+   ```bash
+   git clone https://github.com/kullaniciadi/elx_tcrt.git
+   cd elx_tcrt
+   ```
+
+# Dosya Şeması
 
     elx_tcrt/
     ├──.gitignore              
